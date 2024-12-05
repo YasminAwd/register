@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="container py-5 my-5 text-center">
+        <div class="w-75 m-auto">
+           <h2 class="py-3 text-info">Smart Login System</h2>
+           <div class="mb-3">
+                <div id="formAlert" class="alert alert-danger py-2 text-center d-none">form invalid</div>
+                <input type="text" class="form-control" id="name1" oninput="validateForm(this)" placeholder="enter your name">
+                <div id="nameAlert" class="d-none text danger py-2">failed</div>
+           </div>
+           <div class="mb-3">
+               <input type="email" class="form-control" id="email1" oninput="validateForm(this)" placeholder="enter your email">
+               <div id="nameAlert" class="d-none text danger py-2">failed</div>
+           </div>
+           <div class="mb-3">
+               <input type="password" class="form-control" id="password1" oninput="validateForm(this)" placeholder="enter yout password">
+               <div id="nameAlert" class="d-none text danger py-2">failed</div>
+          </div>
+          <div class="d-grid gap-2">
+               <button class="btn btn-primary" onclick="registerAccount()" type="button">sign up</button>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          <h5 class="py-3 text-white">Don’t have an account? <a href="index.html"class="text-white-50">signin</a></h5>
+        </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

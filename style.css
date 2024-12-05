@@ -1,0 +1,20 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #24353F;
+ 
+}
+.container{
+    background-color:#24353F;
+    box-shadow: 50px 20px 50px 2px;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+input .form-control{
+    background-color: inherit;
+    
+}
+
